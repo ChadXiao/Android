@@ -271,26 +271,26 @@ Runnable作为基本任务的表示形式，是一中有很大局限的抽象，没有返回值
     
 *运行结果*
 
-*t0 === pool-1-thread-1 :　0
-t1 === pool-1-thread-2 :　0
-t0 === pool-1-thread-1 :　1
-t1 === pool-1-thread-2 :　1
-t2 === pool-1-thread-2 :　0
-t3 === pool-1-thread-1 :　0
-t3 === pool-1-thread-1 :　1
-t2 === pool-1-thread-2 :　1
-t4 === pool-1-thread-1 :　0
-t5 === pool-1-thread-2 :　0
-t4 === pool-1-thread-1 :　1
-t5 === pool-1-thread-2 :　1
-t6 === pool-1-thread-1 :　0
-t7 === pool-1-thread-2 :　0
-t6 === pool-1-thread-1 :　1
-t7 === pool-1-thread-2 :　1
-t8 === pool-1-thread-2 :　0
-t9 === pool-1-thread-1 :　0
-t9 === pool-1-thread-1 :　1
-t8 === pool-1-thread-2 :　1*
+    t0 === pool-1-thread-1 :　0
+    t1 === pool-1-thread-2 :　0 
+    t0 === pool-1-thread-1 :　1 
+    t1 === pool-1-thread-2 :　1 
+    t2 === pool-1-thread-2 :　0 
+    t3 === pool-1-thread-1 :　0 
+    t3 === pool-1-thread-1 :　1 
+    t2 === pool-1-thread-2 :　1 
+    t4 === pool-1-thread-1 :　0 
+    t5 === pool-1-thread-2 :　0 
+    t4 === pool-1-thread-1 :　1 
+    t5 === pool-1-thread-2 :　1 
+    t6 === pool-1-thread-1 :　0 
+    t7 === pool-1-thread-2 :　0 
+    t6 === pool-1-thread-1 :　1 
+    t7 === pool-1-thread-2 :　1 
+    t8 === pool-1-thread-2 :　0 
+    t9 === pool-1-thread-1 :　0 
+    t9 === pool-1-thread-1 :　1 
+    t8 === pool-1-thread-2 :　1
 
     
  - 有返回结果
@@ -322,16 +322,16 @@ t8 === pool-1-thread-2 :　1*
 
 运行结果：
 
- *result: t0 === pool-1-thread-1 running 
- result: t1 === pool-1-thread-2 running 
- result: t2 === pool-1-thread-1 running 
- result: t3 === pool-1-thread-2 running 
- result: t4 === pool-1-thread-1 running 
- result: t5 === pool-1-thread-1 running 
- result: t6 === pool-1-thread-1 running 
- result: t7 === pool-1-thread-2 running 
- result: t8 === pool-1-thread-1 running 
- result: t9 === pool-1-thread-2 running* 
+     result: t0 === pool-1-thread-1 running 
+     result: t1 === pool-1-thread-2 running 
+     result: t2 === pool-1-thread-1 running 
+     result: t3 === pool-1-thread-2 running 
+     result: t4 === pool-1-thread-1 running 
+     result: t5 === pool-1-thread-1 running 
+     result: t6 === pool-1-thread-1 running 
+     result: t7 === pool-1-thread-2 running 
+     result: t8 === pool-1-thread-1 running 
+     result: t9 === pool-1-thread-2 running
     
  
    

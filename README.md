@@ -4,7 +4,7 @@
 
 ## 线程池 ##
 
-Executor框架 [https://github.com/ChadXiao/Android/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo/README.md][1]
+Executor框架 [https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo][1]
 
 
-  [1]: https://github.com/ChadXiao/Android/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo/README.md
+  [1]: https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo
