@@ -403,3 +403,6 @@ CompletionService 监听任务的完成
         if (result != null)
           use(result);
       }}
+      
+## 线程中断 ##
+[线程中断][https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo/InterruptDemo]
