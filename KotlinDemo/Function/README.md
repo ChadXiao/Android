@@ -215,81 +215,101 @@
         }
     }
 
- Local Functions
-Kotlin supports local functions, i.e. a function inside another function:
+Local Functions
+---------------
+
+> Kotlin supports local functions, i.e. a function inside another function:
 
 
-fun dfs(graph: Graph) {
-    fun dfs(current: Vertex, visited: Set<Vertex>) {
-        if (!visited.add(current)) return
-        for (v in current.neighbors)
-            dfs(v, visited)
+    fun dfs(graph: Graph) {
+        fun dfs(current: Vertex, visited: Set<Vertex>) {
+            if (!visited.add(current)) return
+            for (v in current.neighbors)
+                dfs(v, visited)
+        }
+    ?
+        dfs(graph.vertices[0], HashSet())
     }
-?
-    dfs(graph.vertices[0], HashSet())
-}
-Local function can access local variables of outer functions (i.e. the closure), so in the case above, the visited can be a local variable:
+
+> Local function can access local variables of outer functions (i.e. the closure), so in the case above, the visited can be a local variable:
 
 
-fun dfs(graph: Graph) {
-    val visited = HashSet<Vertex>()
-    fun dfs(current: Vertex) {
-        if (!visited.add(current)) return
-        for (v in current.neighbors)
-            dfs(v)
+    fun dfs(graph: Graph) {
+        val visited = HashSet<Vertex>()
+        fun dfs(current: Vertex) {
+            if (!visited.add(current)) return
+            for (v in current.neighbors)
+                dfs(v)
+        }
+    ?
+        dfs(graph.vertices[0])
     }
-?
-    dfs(graph.vertices[0])
-}
+
 Member Functions
-A member function is a function that is defined inside a class or object:
+----------------
+
+> A member function is a function that is defined inside a class or object:
 
 
-class Sample() {
-    fun foo() { print("Foo") }
-}
-Member functions are called with dot notation:
+    class Sample() {
+        fun foo() { print("Foo") }
+    }
+
+> Member functions are called with dot notation:
 
 
-Sample().foo() // creates instance of class Sample and calls foo
-For more information on classes and overriding members see Classes and Inheritance.
+    Sample().foo() // creates instance of class Sample and calls foo
+
 
 Generic Functions
-Functions can have generic parameters which are specified using angle brackets before the function name:
+-----------------
+
+> Functions can have generic parameters which are specified using angle brackets before the function name:
 
 
-fun <T> singletonList(item: T): List<T> { ... }
-For more information on generic functions see Generics.
+    fun <T> singletonList(item: T): List<T> { ... }
 
 Inline Functions
-Inline functions are explained here.
+----------------
+
+> Inline functions are explained here.
 
 Extension Functions
-Extension functions are explained in their own section.
+-------------------
+
+> Extension functions are explained in their own section.
 
 Higher-Order Functions and Lambdas
-Higher-Order functions and Lambdas are explained in their own section.
+----------------------------------
+
+> Higher-Order functions and Lambdas are explained in their own section.
 
 Tail recursive functions
-Kotlin supports a style of functional programming known as tail recursion. This allows some algorithms that would normally be written using loops to instead be written using a recursive function, but without the risk of stack overflow. When a function is marked with the tailrec modifier and meets the required form, the compiler optimises out the recursion, leaving behind a fast and efficient loop based version instead:
+------------------------
+
+> Kotlin supports a style of functional programming known as tail recursion. This allows some algorithms that would normally be written using loops to instead be written using a recursive function, but without the risk of stack overflow. When a function is marked with the tailrec modifier and meets the required form, the compiler optimises out the recursion, leaving behind a fast and efficient loop based version instead:
 
 
-val eps = 1E-10 // "good enough", could be 10^-15
-?
-tailrec fun findFixPoint(x: Double = 1.0): Double
-        = if (Math.abs(x - Math.cos(x)) < eps) x else findFixPoint(Math.cos(x))
-This code calculates the fixpoint of cosine, which is a mathematical constant. It simply calls Math.cos repeatedly starting at 1.0 until the result doesn't change any more, yielding a result of 0.7390851332151611 for the specified eps precision. The resulting code is equivalent to this more traditional style:
+    val eps = 1E-10 // "good enough", could be 10^-15
+    tailrec fun findFixPoint(x: Double = 1.0): Double
+            = if (Math.abs(x - Math.cos(x)) < eps) x else findFixPoint(Math.cos(x))
+
+> This code calculates the fixpoint of cosine, which is a mathematical constant. It simply calls Math.cos repeatedly starting at 1.0 until the result doesn't change any more, yielding a result of 0.7390851332151611 for the specified eps precision. The resulting code is equivalent to this more traditional style:
 
 
-val eps = 1E-10 // "good enough", could be 10^-15
-?
-private fun findFixPoint(): Double {
-    var x = 1.0
-    while (true) {
-        val y = Math.cos(x)
-        if (Math.abs(x - y) < eps) return x
-        x = Math.cos(x)
+    val eps = 1E-10 // "good enough", could be 10^-15
+    ?
+    private fun findFixPoint(): Double {
+        var x = 1.0
+        while (true) {
+            val y = Math.cos(x)
+            if (Math.abs(x - y) < eps) return x
+            x = Math.cos(x)
+        }
     }
-}
-To be eligible for the tailrec modifier, a function must call itself as the last operation it performs. You cannot use tail recursion when there is more code after the recursive call, and you cannot use it within try/catch/finally blocks. Currently tail recursion is only supported in the JVM backend.
-    
+
+> To be eligible for the tailrec modifier, a function must call itself as the last operation it performs. You cannot use tail recursion when there is more code after the recursive call, and you cannot use it within try/catch/finally blocks. Currently tail recursion is only supported in the JVM backend.
+
+
+不是尾递归函数使用tailrec关键字无效
+
