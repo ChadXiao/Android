@@ -24,3 +24,5 @@ Executor框架 [https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaCon
 控制流[https://github.com/ChadXiao/Android/tree/master/KotlinDemo/ControlFlow]
 
 Null Safety [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/NullSafety]
+
+Visibility Modefiers [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/VisibilityModifier]
