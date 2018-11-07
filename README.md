@@ -18,3 +18,4 @@ Executor框架 [https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaCon
 变量 [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Properties]
 
 
+基本类型[https://github.com/ChadXiao/Android/tree/master/KotlinDemo/BasicType]
