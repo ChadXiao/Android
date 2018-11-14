@@ -137,7 +137,18 @@ inv() ¨C bitwise inversion
 
     val x: IntArray = intArrayOf(1, 2, 3)
     x[0] = x[1] + x[2]
+    
 
+ - ×ªList
+
+
+----------
+
+    val arr = arrayOf(1, 2, 3)
+    var list = asList(4, *arr)
+    var list2 = arr.toList()
+    
+ 
 ## Unsigned integers ##
 
 > kotlin.UByte: an unsigned 8-bit integer, ranges from 0 to 255
