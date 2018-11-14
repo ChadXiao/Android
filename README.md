@@ -29,6 +29,8 @@ Visibility Modefiers [https://github.com/ChadXiao/Android/tree/master/KotlinDemo
 
 类 [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Class]
 
+集合 [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Collections]
+
 Ranges [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Ranges]
 
 # Android Bug 汇总 #
