@@ -2,15 +2,15 @@
 
 ------
 
-## 线程池 ##
+# 线程池 #
 
 Executor框架 [https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo]
 
-## Java I/O ##
+# Java I/O #
 
 传统I/O [https://github.com/ChadXiao/Android/tree/master/JavaDemo/Java_IO_NIO_and_NIO_2/CLASS_IO]
 
-## Kotlin ##
+# Kotlin #
 
 方法 [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Function]
 
@@ -31,3 +31,6 @@ Visibility Modefiers [https://github.com/ChadXiao/Android/tree/master/KotlinDemo
 
 Ranges [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Ranges]
 
+# Android Bug 汇总 #
+
+Android Bug 汇总 [https://github.com/ChadXiao/Android/tree/master/AndroidBug]
