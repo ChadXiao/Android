@@ -33,6 +33,11 @@ Visibility Modefiers [https://github.com/ChadXiao/Android/tree/master/KotlinDemo
 
 Ranges [https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Ranges]
 
+## 缺陷 ##
+
+ 1. 泛型没有默认类型
+
+
 # Android Bug 汇总 #
 
 Android Bug 汇总 [https://github.com/ChadXiao/Android/tree/master/AndroidBug]
