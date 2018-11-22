@@ -1,4 +1,4 @@
-# Android Bug»ã×Ü #
+# Android Bugæ±‡æ€» #
 ----------
 
 ## CLEARTEXT ##
@@ -13,24 +13,30 @@
 
 > This follows a variety of changes we've made over the years to better protect Android users.To prevent accidental unencrypted connections, we introduced the android:usesCleartextTraffic manifest attribute in Android Marshmallow. In Android Nougat, we extended that attribute by creating the Network Security Config feature, which allows apps to indicate that they do not intend to send network traffic without encryption. In Android Nougat and Oreo, we still allowed cleartext connections.
 
-Android P Ä¬ÈÏÒªÇóÊ¹ÓÃ¼ÓÃÜÁ¬½Ó£¬½ûÖ¹AppÊ¹ÓÃËùÓĞÎ´¼ÓÃÜµÄÁ¬½Ó£¬Òì³£ÔËĞĞAndroid P ÏµÍ³µÄ°²×¿Éè±¸ÎŞÂÛÊÇ½ÓÊÕ»òÕß·¢ËÍÁ÷Á¿£¬Î´À´¶¼²»ÄÜÃ÷Âë´«Êä£¬ĞèÒªÊ¹ÓÃÏÂÒ»´ú£¨Transport Layer Security£©´«Êä²ã°²È«Ğ­Òé
+Android P é»˜è®¤è¦æ±‚ä½¿ç”¨åŠ å¯†è¿æ¥ï¼Œç¦æ­¢Appä½¿ç”¨æ‰€æœ‰æœªåŠ å¯†çš„è¿æ¥ï¼Œå¼‚å¸¸è¿è¡ŒAndroid P ç³»ç»Ÿçš„å®‰å“è®¾å¤‡æ— è®ºæ˜¯æ¥æ”¶æˆ–è€…å‘é€æµé‡ï¼Œæœªæ¥éƒ½ä¸èƒ½æ˜ç ä¼ è¾“ï¼Œéœ€è¦ä½¿ç”¨ä¸‹ä¸€ä»£ï¼ˆTransport Layer Securityï¼‰ä¼ è¾“å±‚å®‰å…¨åè®®
 
-Èç¹ûÓÉÓÚÄ³Ğ©Ô­Òò²»µÃ²»Ê¹ÓÃÃ÷Âë´«Êä£¬ÔòĞèÒªÅäÖÃ[network security config][1]
+å¦‚æœç”±äºæŸäº›åŸå› ä¸å¾—ä¸ä½¿ç”¨æ˜ç ä¼ è¾“ï¼Œåˆ™éœ€è¦é…ç½®[network security config][1]
 
-ÔÚres/xmlÖĞĞÂ½¨network_security_config.xmlÎÄ¼ş
+åœ¨res/xmlä¸­æ–°å»ºnetwork_security_config.xmlæ–‡ä»¶
 
     <?xml version="1.0" encoding="utf-8"?>
     <network-security-config>
         <base-config cleartextTrafficPermitted="true" />
     </network-security-config>
     
-ÔÚAndroidManifest.xmlÎÄ¼şµÄapplicationÖĞÔö¼ÓÈçÏÂÊôĞÔ
+åœ¨AndroidManifest.xmlæ–‡ä»¶çš„applicationä¸­å¢åŠ å¦‚ä¸‹å±æ€§
 
     <application
     ...
      android:networkSecurityConfig="@xml/network_security_config"
     ...
         />
+
+## è·å–ç¼–è¯‘é”™è¯¯ä¿¡æ¯ ##
+
+> gradlew compileDebugSource --stacktrace -info
+> 
+> åœ¨AndroidStudioçš„terminalä¸­è¾“å…¥ä¸Šé¢çš„å‘½ä»¤,é‡æ–°ç¼–è¯‘æŸ¥çœ‹gradleçš„å…·ä½“æŠ¥é”™ä¿¡æ¯
 
 
   [1]: https://developer.android.com/training/articles/security-config
