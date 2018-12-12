@@ -29,17 +29,25 @@
 
 [Ranges][11]
 
+# Java Native Interface Specification Contents
+
+[Chapter 1: Introduction][12]
+[Chapter 2: Design Overview][13]
+[Chapter 3: JNI Types and Data Structures][14]
+[Chapter 4: JNI Functions][15]
+[Chapter 5: The Invocation API][16]
+
 ## 缺陷 ##
 
  1. 泛型没有默认类型
 
 ## 常见问题 ##
 
-[Kotlin无法使用注解][12]
+[Kotlin无法使用注解][17]
 
 # Android Bug 汇总 #
 
-[Android Bug 汇总][13]
+[Android Bug 汇总][18]
 
 
   [1]: https://github.com/ChadXiao/Android/tree/master/JavaDemo/JavaConcurrencyInPractice/ExecutorDemo
@@ -53,5 +61,10 @@
   [9]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Class
   [10]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Collections
   [11]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Ranges
-  [12]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/ProblemSummary/kapt
-  [13]: https://github.com/ChadXiao/Android/tree/master/AndroidBug
+  [12]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_1_Introduction
+  [13]: Chapter%202:%20Design%20Overview
+  [14]: Chapter%203:%20JNI%20Types%20and%20Data%20Structures
+  [15]: Chapter%204:%20JNI%20Functions
+  [16]: Chapter%205:%20The%20Invocation%20API
+  [17]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/ProblemSummary/kapt
+  [18]: https://github.com/ChadXiao/Android/tree/master/AndroidBug
