@@ -62,7 +62,7 @@
   [10]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Collections
   [11]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/Ranges
   [12]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_1_Introduction
-  [13]: Chapter%202:%20Design%20Overview
+  [13]:  https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_2_DesignOverview
   [14]: Chapter%203:%20JNI%20Types%20and%20Data%20Structures
   [15]: Chapter%204:%20JNI%20Functions
   [16]: Chapter%205:%20The%20Invocation%20API
