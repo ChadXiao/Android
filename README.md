@@ -32,9 +32,13 @@
 # Java Native Interface Specification Contents
 
 [Chapter 1: Introduction][12]
+
 [Chapter 2: Design Overview][13]
+
 [Chapter 3: JNI Types and Data Structures][14]
+
 [Chapter 4: JNI Functions][15]
+
 [Chapter 5: The Invocation API][16]
 
 ## 缺陷 ##
