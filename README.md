@@ -68,7 +68,7 @@
   [12]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_1_Introduction
   [13]:  https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_2_DesignOverview
   [14]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_3_TypesAndDataStructures
-  [15]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_4_JNIFunctions
+  [15]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_4_JNIFunction
   [16]: https://github.com/ChadXiao/Android/tree/master/Java_Native_Interface_Spacification_JAVA_SE_8/Chapter_5_TheInvocationApi
   [17]: https://github.com/ChadXiao/Android/tree/master/KotlinDemo/ProblemSummary/kapt
   [18]: https://github.com/ChadXiao/Android/tree/master/AndroidBug
